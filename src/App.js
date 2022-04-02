@@ -1,15 +1,4 @@
-import styled from "styled-components";
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
-
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
+import { Title, Wrapper, Button, TomatoButton } from "./styles/styles";
 
 function App() {
   return (
@@ -17,6 +6,10 @@ function App() {
       <Wrapper>
         <Title>Hello World!</Title>
       </Wrapper>
+      <Button>Normal Button</Button>
+      <Button primary>Primary</Button>
+      {/* <Button secondary>Secondary</Button> */}
+      <TomatoButton>TomatoButton</TomatoButton>
     </>
   );
 }

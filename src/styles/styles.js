@@ -1,29 +1,28 @@
 import styled from "styled-components";
 
-export const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
+export const StyledCounter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
-export const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
+export const ButtonContainer = styled.div`
+  display: flex;
+`;
+
+export const Paragraph = styled.p`
+  font-size: 2rem;
+  color: orange;
 `;
 
 export const Button = styled.button`
-  background: ${(props) => (props.primary ? "palevioletred" : "white")};
-  color: ${(props) => (props.primary ? "white" : "palevioletred")};
-  ${"" /* color: ${(props) => (props.secondary ? "blue" : "lightgray")}; */}
+  background: ${(props) => (props.base ? "blue" : "white")};
+  color: ${(props) => (props.base ? "white" : "blue")};
 
   font-size: 1rem;
   margin: 1rem;
   padding: 0.25rem 1rem;
-  border: 2px solid palevioletred;
+  border: 2px solid blue;
   border-radius: 3px;
-`;
-
-export const TomatoButton = styled(Button)`
-  color: tomato;
-  border-color: tomato;
 `;
